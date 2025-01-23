@@ -1,1 +1,38 @@
-<p>{{listaVerduras}}</p>
+<p>{{ listaVerduras }}</p>
+<p *ngIf="precioApio == 2">{{ precioApio }}</p>
+<hr />
+<p>Es de temporada: {{ verdura.temporada ? "Sí" : "No" }}</p>
+
+<div>
+  <button (click)="cambiarTemporada()">{{tituloboton}}</button>
+
+  <ul *ngFor="let x of verduras">
+    <li  *ngIf="configuracionTemporada == x.temporada">
+      {{ x.nombre }} - Precio: ${{ x.precio }} -
+      {{ x.temporada ? 'De temporada' : 'No de temporada' }}
+    </li>
+  </ul>
+
+
+
+
+
+  <!-- <ul *ngIf="esTemporada == true">
+    <li>
+      {{ verduras[0].nombre }} - Precio: S/.{{ verduras[0].precio }} -
+      {{ verduras[0].temporada ? "Es su temporada" : "No es su temporada" }}
+    </li>
+  </ul>
+</div>
+
+<div >
+
+  <ul *ngIf="esTemporada == false">
+  <li>
+    {{ verduras[1].nombre }} - Precio: S/.{{ verduras[1].precio }} -
+    {{ verduras[1].temporada ? "Es su temporada" : "No es su temporada" }}
+  </li>
+</ul> -->
+
+
+</div>

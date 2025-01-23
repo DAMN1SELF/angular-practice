@@ -15,7 +15,7 @@ import { VerdurachonitaComponent } from './verdurachonita/verdurachonita.compone
     NuevoFiltroPipe,
     FrutaComponent,
     VerdurachonitaComponent,
-  
+
   ],
   imports: [
     BrowserModule,
